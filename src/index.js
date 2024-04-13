@@ -23,6 +23,8 @@ import ForgotPassword from './Pages/ForgotPassword';
 import ResetPassword from './Pages/ResetPassword';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Verify from './Pages/Verify';
+import Verified from './Pages/Verified';
 
 
 
@@ -46,7 +48,9 @@ const router = createBrowserRouter([
       { path: 'logout', element: <Logout /> },
       { path: 'posts/users/:id', element: <AuthorPosts /> },
       { path: 'forgot-password', element: <ForgotPassword /> },
-      { path: 'reset-password/:token', element: <ResetPassword/> },
+      { path: 'reset-password/:token', element: <ResetPassword /> },
+      { path: 'verify', element: <Verify /> },
+      { path: 'verified/:token', element: <Verified/> },
       
     ]
   },
