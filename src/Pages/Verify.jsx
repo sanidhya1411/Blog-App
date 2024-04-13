@@ -19,7 +19,7 @@ const Verify = () => {
     setError('')
     try {
 
-      const response = await axios.post(`http://localhost:5000/api/users/verify`, userData)
+      const response = await axios.post(`https://blog-backend-six-drab.vercel.app/verify`, userData)
 
       if (response.status==200) {
         toast.info('Please check your mail', {
